@@ -6,7 +6,7 @@ public class file {
     public static void main(String[] args) {
         
         // определяем объект для каталога
-        File dir = new File("C://SomeDir");
+        File dir = new File("D:\\SomeDir");
         // если объект представляет каталог
         if(dir.isDirectory())
         {

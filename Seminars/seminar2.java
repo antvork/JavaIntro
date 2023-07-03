@@ -8,7 +8,7 @@ import java.util.logging.SimpleFormatter;
 
 
 public class seminar2 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SecurityException, IOException {
 
         // // System.out.println(longStringBuilding(10, 'a', 'b'));
         // System.out.println(stringCompress("aaaabbbcdd"));
@@ -18,17 +18,12 @@ public class seminar2 {
         // System.out.println(isPalindrom(string));
         // in.close();
 
-        // String pathProject = System.getProperty("user.dir");
-        // // String pathFile = pathProject.concat("\\Seminar2-1.txt");
-        // String pathFile2 = pathProject.concat("\\Seminar2-1.txt");
-        // // addingToFile(pathFile, longStringCreator("Hello!", 5));
-        // addListtoFile(pathFile2, showCurrentFile(pathProject));
-
-        String pathProject = System.getProperty("user.dir");
-        String pathFile1 = pathProject.concat("\\Seminar2-1.txt");
+        String pathProject = System.getProperty("user.dir"); // Получаем в строку дирректорию "D:\learning\GB_devops\JavaIntro"
+        String pathFile1 = pathProject.concat("\\Seminar2-1.txt"); // Соединение строки с "\Seminar2-1.txt"
         String pathFile2 = pathProject.concat("\\Seminar2-2.txt");
-        //addingToFile(pathFile1, longStringCreator("Hello!", 5));
-        addListToFile(pathFile2, showCurrentFiles(pathProject));
+        addingToFile(pathFile1, longStringCreator("Hello!", 5));
+        // addListToFile(pathFile2, showCurrentFiles(pathProject));
+        // System.out.println(pathFile1);
 
 
     }

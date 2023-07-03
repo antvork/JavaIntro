@@ -10,4 +10,5 @@ public class Ex001_stringsDemo {
         // C,е,р,г,е,й
         System.out.println(String.join(",", "C", "е", "р", "г", "е", "й"));
     }
+    
 }

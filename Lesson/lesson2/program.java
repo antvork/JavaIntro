@@ -13,11 +13,13 @@ public class program {
 
         System.out.println(System.currentTimeMillis());
 
-        // StringBuilder
+        // String
     // concat(): объединение строк
     // valueOf(): преобразует Object в строковое представление (завязан на toString())
     // join(): объединяет набор строк в одну с учетом разделителя
+    // ### String joined = String.join("/", "2014", "10", "28" ); // "2014/10/28"
     // charAt(): получение символа по индексу
+    // #### System.out.println("J\u0061vaRush".charAt(1));
     // indexOf(): первый индекс вхождения подстроки
     // lastIndexOf(): последний индекс вхождения подстроки
     // startsWith()/endsWith(): определяет, начинается/заканчивается ли строка с подстроки
