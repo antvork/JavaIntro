@@ -23,12 +23,12 @@ public class seminar3 {
 
     public static void main(String[] args) {
 
-        // Integer size = GetNumber("Enter size array: ");
-        // Integer maxValue = GetNumber("Enter max value: ");
-        // ListRandomeNew(size, maxValue);
+        Integer size = GetNumber("Enter size array: ");
+        Integer maxValue = GetNumber("Enter max value: ");
+        ListRandomeNew(size, maxValue);
         // Integer sizeArray = GetNumber("Enter size array: ");
         // planetCounter(sizeArray);
-        createTable(3);
+        // createTable(3);
 
     }
 
@@ -44,17 +44,17 @@ public class seminar3 {
         ArrayList<Integer> list = new ArrayList<>();
         Random random = new Random();
         for (int i = 0; i < size; i++) {
-            list.add(random.nextInt(maxValue));
+            list.add(random.nextInt(maxValue)); //Заполняем значениями
         }
         for (int item : list) {
-            System.out.print(item + " ");
+            System.out.print(item + " "); //Вывод до сортировки
         }
-        list.sort(Comparator.naturalOrder());
+        list.sort(Comparator.naturalOrder()); // сортировка по возрастанию
 
-        Iterator<Integer> col = list.iterator();
+        Iterator<Integer> col = list.iterator(); // массив под перебор 
         System.out.println();
 
-        while (col.hasNext()) {
+        while (col.hasNext()) { // идем по массиву и печатаем если есть следующий элемент
             System.out.print(col.next() + " ");
         }
 
