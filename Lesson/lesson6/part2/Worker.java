@@ -1,0 +1,27 @@
+package Lesson.lesson6.part2;
+
+public class Worker {
+    int id;
+    int salary;
+    String firstName;
+    String lastName;
+    
+
+    @Override // поменяли базоое поведение для класса
+    public String toString() {
+        return String.format("%d %s %s %d", id, firstName, lastName, salary);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        var t = (Worker) o;
+        return id == t.id && firstName == t.firstName;
+    }
+    @Override
+    public int hashCode() {
+        return id;
+    }
+
+
+    
+}
