@@ -44,9 +44,9 @@ public class task1 {
     static void printBook2(Map<String, ArrayList<Integer>> map){
          TreeMap<String, LinkedList<Integer>> resultMap = new TreeMap<>();
 
-        for (Map.Entry<String, ArrayList<Integer>> entry : map.entrySet()) {
-            String key = entry.getKey();
-            ArrayList<Integer> arrayList = entry.getValue();
+        for (var item : map.entrySet()) {
+            String key = item.getKey();
+            ArrayList<Integer> arrayList = item.getValue();
             LinkedList<Integer> linkedList = new LinkedList<>(arrayList);
             resultMap.put(key, linkedList);
         }
